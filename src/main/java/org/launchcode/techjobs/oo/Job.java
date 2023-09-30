@@ -91,4 +91,17 @@ public class Job {
     public int getId() {
         return id;
     }
+
+    @Override
+    public String toString(){
+        StringBuilder jobList = new StringBuilder();
+        jobList.append(System.lineSeparator());
+        jobList.append("ID: ").append(id).append(System.lineSeparator());
+        jobList.append("Name: ").append(name != null ? name : "Data not available").append(System.lineSeparator());
+        jobList.append("Employer: ").append(employer != null ? employer : "Data not available").append(System.lineSeparator());
+        jobList.append("Location: ").append(location != null ? location : "Data not available").append(System.lineSeparator());
+        jobList.append("Position Type: ").append(positionType != null ? positionType : "Data not available").append(System.lineSeparator());
+        jobList.append("Core Competency: ").append(coreCompetency != null ? coreCompetency : "Data not available").append(System.lineSeparator());
+        return jobList.toString();
+    }
 }
