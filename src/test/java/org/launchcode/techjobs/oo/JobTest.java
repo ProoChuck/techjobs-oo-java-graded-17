@@ -50,7 +50,7 @@ public class JobTest {
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
         String expectedOutput = System.lineSeparator() +
-                "ID: 1" + System.lineSeparator() +
+                "ID: " + job5.getId() + System.lineSeparator() +
                 "Name: Product tester" + System.lineSeparator() +
                 "Employer: ACME" + System.lineSeparator() +
                 "Location: Desert" + System.lineSeparator() +
@@ -67,7 +67,7 @@ public class JobTest {
         Job job5 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String expectedOutput = System.lineSeparator() +
-                "ID: 1" + System.lineSeparator() +
+                "ID: " + job5.getId() + System.lineSeparator() +
                 "Name: Product tester" + System.lineSeparator() +
                 "Employer: ACME" + System.lineSeparator() +
                 "Location: Desert" + System.lineSeparator() +
@@ -85,7 +85,7 @@ public class JobTest {
         Job job5 = new Job("Product tester", new Employer("ACME"),null,
                 new PositionType("Quality control"),null);
         String expectedOutput = System.lineSeparator() +
-                "ID: 1" + System.lineSeparator() +
+                "ID: " + job5.getId() + System.lineSeparator() +
                 "Name: Product tester" + System.lineSeparator() +
                 "Employer: ACME" + System.lineSeparator() +
                 "Location: Data not available" + System.lineSeparator() +
